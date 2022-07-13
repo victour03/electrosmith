@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Electro Smith</title>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.3.5/dist/alpine.min.js" defer></script>
+
+  <!-- CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+
+</head>
+
+<body class="font-primary">
+  <!-- Navigation -->
+  <div class="navigation z-50 sticky top-0 shadow">
+
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded">
+      <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="/" class="flex items-center">
+          <img src="./assets/images/logo.png" alt="ElectroSmith Logo" class="h-14 sm:h-16" />
+        </a>
+        <div class="flex md:order-2">
+          <button type="button"
+            class="text-white hidden md:inline-block bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-xl text-md sm:text-xl px-5 py-2.5 text-center mr-2 mb-2">
+            770-385-1318
+          </button>
+          <button data-collapse-toggle="mobile-menu" type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="mobile-menu-4" aria-expanded="false" id="mobile-btn">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+            <svg class="hidden w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu">
+          <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
+            <li>
+              <a href="#home"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Home</a>
+            </li>
+            <li>
+              <a href="#about"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">About</a>
+            </li>
+            <li>
+              <a href="#services"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Services</a>
+            </li>
+            <li>
+              <a href="#contact"
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <section class="container mx-auto">
+      <div class="grid max-w-screen-xl px-4 mx-auto lg:gap-8 xl:gap-0 py-16 md:py-28 lg:grid-cols-12">
+        <div class="mr-auto place-self-center lg:col-span-7">
+          <h1
+            class="max-w-2xl mb-4 text-5xl text-center md:text-left font-extrabold text-gray-700 tracking-tight leading-none xl:text-6xl">
+            Atlanta's Best
+            <span class="text-yellow-500">Electrical</span> Services
+          </h1>
+          <p class="max-w-2xl mb-6 font-normal text-center md:text-left text-gray-500 lg:mb-8 md:text-lg lg:text-xl">
+            We offer our best and highly-trained engineers and electricians to
+            light up your homes and businesses.
+          </p>
+          <div class="hero-btn flex items-center justify-center md:justify-start">
+            <a href="#contact"><button type="button"
+                class="text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-4 focus:ring-yellow-300 font-medium rounded-xl text-md px-5 py-2.5 text-center mr-2 mb-2">
+                Contact Us
+              </button></a>
+          </div>
+        </div>
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <img src="./assets/images/electric-hero.jpg" alt="mockup" class="rounded-lg" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Us Section -->
+  <div class="about" id="about">
+    <section class="py-20 container max-w-screen-xl mx-auto px-4">
+      <div class="about-title mb-8">
+        <h2 class="text-center text-4xl text-gray-700 font-bold">
+          About Us
+        </h2>
+      </div>
+      <div class="about-description mb-16">
+        <h3 class="text-center text-xl text-gray-700 font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing
+          elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+      </div>
+      <div class="about-card">
+        <div
+          class="flex flex-col items-center bg-white mb-6 rounded-lg border shadow-sm sm:max-w-lg sm:mx-auto md:max-w-3xl md:mx-auto md:flex-row">
+          <img class="object-cover w-full h-80 rounded-t-lg md:h-64 md:w-auto md:rounded-none md:rounded-l-lg"
+            src="./assets/images/electrician.jpg" alt="">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700 mb-5 text-center md:text-left">Reliable
+              Electricians</h5>
+            <p class="mb-3 font-normal text-gray-700">Electro Smith specializes in residential and commercial services.
+              Whether you need a small fixing or the installation of state-of-the-art home, we get the job done right.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center bg-white mb-6 rounded-lg border shadow-sm sm:max-w-lg sm:mx-auto md:max-w-3xl md:mx-auto md:flex-row">
+          <img class="object-cover w-full h-80 rounded-t-lg md:h-64 md:w-auto md:rounded-none md:rounded-l-lg"
+            src="./assets/images/electrician-2.jpg" alt="">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700 mb-5 text-center md:text-left">Flexible
+              Services</h5>
+            <p class="mb-3 font-normal text-gray-700">We provide a thorough consultation to explain your available
+              options. With that information, you can choose the scope of work that's right for your home or business
+              and for your budget.</p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center bg-white rounded-lg border shadow-sm sm:max-w-lg sm:mx-auto md:max-w-3xl md:mx-auto md:flex-row">
+          <img class="object-cover w-full h-80 rounded-t-lg md:h-64 md:w-auto md:rounded-none md:rounded-l-lg"
+            src="./assets/images/electrician-3.jpg" alt="">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-700 mb-5 text-center md:text-left">Satisfaction
+              Guaranteed</h5>
+            <p class="mb-3 font-normal text-gray-700">We strive to save you both time and money by combining experience,
+              high quality parts and equipment, and exceptional service. We will stick with the job until you are
+              satisfied.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Call to Action Section -->
+  <div class="call-1 bg-yellow-500">
+    <section class="container mx-auto">
+      <div class="px-4 py-6 max-w-screen-xl mx-auto text-white grid lg:grid-cols-12 grid-cols-1">
+        <div class="lg:col-span-10 mb-6 lg:mb-0">
+          <h2 class="text-2xl sm:text-3xl font-semibold text-center lg:text-left">
+            We offer our best services to your electrical projects
+          </h2>
+        </div>
+        <div class="lg:col-span-2 flex items-center justify-center lg:justify-end">
+          <a href="#contact">
+            <button type="button"
+              class="text-gray-700 bg-white hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-100 font-medium rounded-xl text-md px-5 py-2.5 text-center">
+              Call Us Now
+            </button></a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Services Section -->
+  <div class="services" id="services">
+    <section class="py-20 px-4 container max-w-screen-xl mx-auto">
+      <div class="services-title mb-16">
+        <h2 class="text-center text-4xl text-gray-700 font-bold">
+          Our Services
+        </h2>
+      </div>
+      <div class="services-card max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2">
+        <div class="services-residential mx-auto mb-8 md:mb-0">
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm">
+            <a href="#">
+              <img class="rounded-t-lg" src="./assets/images/residential.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-700">
+                  Residential
+                </h5>
+              </a>
+              <div class="font-normal text-gray-700">
+                <p class="mb-2">
+                  Since 1997 we have provided quality electrical services for many builders in the Atlanta Area. Our
+                  attention to detail ensures that every job is completed to perfection allowing for every home to be
+                  safe and issue free.
+                </p>
+                <p class="mb-3">
+                  Even though new contruction is our specialty, we are very fond of the older homes that can be found in
+                  Atlanta and its surroudning areas. We treat every service call and renovation with the same care we
+                  would use in our own homes.
+                </p>
+                <div class="flex item-center justify-center">
+                  <button type="button"
+                    class="text-gray-700 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
+                    More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-commercial mx-auto">
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm">
+            <a href="#">
+              <img class="rounded-t-lg" src="./assets/images/commercial.jpg" alt="" />
+            </a>
+            <div class="p-5">
+              <a href="#">
+                <h5 class="mb-2 text-2xl text-center font-bold tracking-tight text-gray-700">
+                  Commercial
+                </h5>
+              </a>
+              <div class="font-normal text-gray-700">
+                <p class="mb-2">
+                  In commercial environments we know that everything needs to be fully fuctional at all times. We treat
+                  every commercial job with the upmost level of care and professionalism.
+                </p>
+                <p>Here are a few of the services we offer:</p>
+                <ul style="list-style-type:disc" class="pl-4 mb-3">
+                  <li>Preventive Maintenance</li>
+                  <li>Electrical Upgrades</li>
+                  <li>Tenant Build Out</li>
+                  <li>Power Distribution</li>
+                  <li>Computer and Communications Cabling</li>
+                  <li>Energy Efficient Lighting</li>
+                  <li>Generators</li>
+                </ul>
+                <div class="flex item-center justify-center">
+                  <button type="button"
+                    class="text-gray-700 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
+                    More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Call to Action Section 2 -->
+  <div class="call-2">
+    <section class="container mx-auto">
+      <div class="px-4 py-16 max-w-screen-xl mx-auto text-white">
+        <div class="lg:col-span-10 mb-6 lg:mb-0">
+          <p class="text-2xl leading-8 sm:text-4xl font-semibold text-center">
+            ElectroSmith was in the industry since 1997, we treat every residential and commercial job with the upmost
+            level of care and professionalism.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
+  </div>
+
+  <!-- Testimonials Section -->
+  <div class="testimonials">
+    <section>
+      <div class="flex flex-col md:flex-row shadow-sm overflow-hidden" x-data="{ testimonialActive: 2 }" x-cloak>
+        <div class="relative w-full py-2 md:py-24 bg-yellow-500 md:w-1/2 flex flex-col item-center justify-center">
+
+          <div class="absolute top-0 left-0 z-10 grid-yellow w-16 h-16 md:w-40 md:h-40 md:ml-20 md:mt-24"></div>
+
+          <div
+            class="relative text-4xl md:text-5xl py-10 px-6 sm:py-16 sm:px-1 sm:max-w-sm mx-auto md:max-w-lg text-white font-semibold leading-tight tracking-tight mb-0 z-20">
+            <span class="block">What Our Customers</span>
+            <span class="block">Are Saying!</span>
+          </div>
+
+          <div class="absolute right-0 bottom-0 mr-4 mb-4 hidden md:block">
+            <button
+              class="rounded-l-full border-r bg-gray-100 text-gray-500 focus:outline-none hover:text-yellow-500 font-bold w-12 h-10"
+              x-on:click="testimonialActive = testimonialActive === 1 ? 3 : testimonialActive - 1">
+              &#8592;
+            </button><button
+              class="rounded-r-full bg-gray-100 text-gray-500 focus:outline-none hover:text-yellow-500 font-bold w-12 h-10"
+              x-on:click="testimonialActive = testimonialActive >= 3 ? 1 : testimonialActive + 1">
+              &#8594;
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 md:w-1/2">
+          <div class="flex flex-col h-full relative">
+
+            <div class="absolute top-0 left-0 mt-3 ml-4 md:mt-5 md:ml-12">
+              <svg xmlns="http://www.w3.org/2000/svg" class="text-yellow-200 fill-current w-12 h-12 md:w-16 md:h-16"
+                viewBox="0 0 24 24">
+                <path
+                  d="M6.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L9.758 4.03c0 0-.218.052-.597.144C8.97 4.222 8.737 4.278 8.472 4.345c-.271.05-.56.187-.882.312C7.272 4.799 6.904 4.895 6.562 5.123c-.344.218-.741.4-1.091.692C5.132 6.116 4.723 6.377 4.421 6.76c-.33.358-.656.734-.909 1.162C3.219 8.33 3.02 8.778 2.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C2.535 17.474 4.338 19 6.5 19c2.485 0 4.5-2.015 4.5-4.5S8.985 10 6.5 10zM17.5 10c-.223 0-.437.034-.65.065.069-.232.14-.468.254-.68.114-.308.292-.575.469-.844.148-.291.409-.488.601-.737.201-.242.475-.403.692-.604.213-.21.492-.315.714-.463.232-.133.434-.28.65-.35.208-.086.39-.16.539-.222.302-.125.474-.197.474-.197L20.758 4.03c0 0-.218.052-.597.144-.191.048-.424.104-.689.171-.271.05-.56.187-.882.312-.317.143-.686.238-1.028.467-.344.218-.741.4-1.091.692-.339.301-.748.562-1.05.944-.33.358-.656.734-.909 1.162C14.219 8.33 14.02 8.778 13.81 9.221c-.19.443-.343.896-.468 1.336-.237.882-.343 1.72-.384 2.437-.034.718-.014 1.315.028 1.747.015.204.043.402.063.539.017.109.025.168.025.168l.026-.006C13.535 17.474 15.338 19 17.5 19c2.485 0 4.5-2.015 4.5-4.5S19.985 10 17.5 10z" />
+              </svg>
+            </div>
+
+            <div class="h-full relative z-10">
+              <div x-show.immediate="testimonialActive === 1">
+                <p class="text-gray-700 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                  x-show.transition="testimonialActive == 1">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. </p>
+              </div>
+
+              <div x-show.immediate="testimonialActive === 2">
+                <p class="text-gray-700 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                  x-show.transition="testimonialActive == 2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. </p>
+              </div>
+
+              <div x-show.immediate="testimonialActive === 3">
+                <p class="text-gray-700 serif font-normal italic px-6 py-6 md:px-16 md:py-10 text-xl md:text-2xl"
+                  x-show.transition="testimonialActive == 3">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquip ex ea commodo consequat. </p>
+              </div>
+            </div>
+
+            <div class="flex my-4 justify-center items-center">
+              <button @click.prevent="testimonialActive = 1"
+                class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline inline-block rounded-full mx-2"
+                :class="{'h-12 w-12 opacity-25 bg-yellow-300 text-gray-600': testimonialActive != 1, 'h-16 w-16 opacity-100 bg-yellow-600 text-white': testimonialActive == 1 }">JD</button>
+              <button @click.prevent="testimonialActive = 2"
+                class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-16 w-16 inline-block bg-yellow-600 rounded-full mx-2"
+                :class="{'h-12 w-12 opacity-25 bg-yellow-300 text-gray-600': testimonialActive != 2, 'h-16 w-16 opacity-100 bg-yellow-600 text-white': testimonialActive == 2 }">WD</button>
+              <button @click.prevent="testimonialActive = 3"
+                class="text-center font-bold shadow-xs focus:outline-none focus:shadow-outline h-12 w-12 inline-block bg-yellow-600 rounded-full mx-2"
+                :class="{'h-12 w-12 opacity-25 bg-yellow-300 text-gray-600': testimonialActive != 3, 'h-16 w-16 opacity-100 bg-yellow-600 text-white': testimonialActive == 3 }">JW</button>
+            </div>
+
+            <div class="flex justify-center px-6 pt-2 pb-6 md:py-6">
+              <div class="text-center" x-show="testimonialActive == 1">
+                <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">John Doe</h2>
+                <small class="text-gray-500 text-xs md:text-sm truncate">CEO, ABC Inc.</small>
+              </div>
+
+              <div class="text-center" x-show="testimonialActive == 2">
+                <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">Winter Doe</h2>
+                <small class="text-gray-500 text-xs md:text-sm truncate">CTO, XYZ Corp.</small>
+              </div>
+
+              <div class="text-center" x-show="testimonialActive == 3">
+                <h2 class="text-sm md:text-base font-bold text-gray-700 leading-tight">John Wick</h2>
+                <small class="text-gray-500 text-xs md:text-sm truncate">Product Manager, Fake Corp.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact" id="contact">
+    <section class="container max-w-screen-lg mx-auto py-16 px-4 text-gray-700">
+      <div class="contact-title mb-10">
+        <h2 class="text-center text-4xl font-bold">Contact Us</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 rounded-3xl">
+        <div class="contact-form flex item-center justify-center mb-10 md:mb-0">
+          <div class="w-full md:w-96 md:max-w-full">
+            <div class="contact-form-title mb-6">
+              <h2 class="text-center text-2xl font-semibold">Request a Service</h2>
+            </div>
+            <div class="p-6 border border-gray-300 max-w-md mx-auto sm:rounded-md bg-white">
+              <form method="POST" action="">
+                <label class="block mb-6">
+                  <span class="text-gray-700">Your name</span>
+                  <input type="text" name="name" class="
+                                  block
+                                  w-full
+                                  mt-1
+                                  border-gray-300
+                                  rounded-md
+                                  shadow-sm
+                                  focus:border-indigo-300
+                                  focus:ring
+                                  focus:ring-indigo-200
+                                  focus:ring-opacity-50
+                                  px-1
+                                " placeholder="John Doe" />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-700">Email address</span>
+                  <input name="email" type="email" class="
+                                  block
+                                  w-full
+                                  mt-1
+                                  border-gray-300
+                                  rounded-md
+                                  shadow-sm
+                                  focus:border-indigo-300
+                                  focus:ring
+                                  focus:ring-indigo-200
+                                  focus:ring-opacity-50
+                                  px-1
+                                " placeholder="johndoe@example.com" required />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-700">Contact Number</span>
+                  <input name="contactnum" type="text" class="
+                                  block
+                                  w-full
+                                  mt-1
+                                  border-gray-300
+                                  rounded-md
+                                  shadow-sm
+                                  focus:border-indigo-300
+                                  focus:ring
+                                  focus:ring-indigo-200
+                                  focus:ring-opacity-50
+                                  px-1
+                                " placeholder="770-385-1318" required />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-700">Address</span>
+                  <input name="address" type="text" class="
+                                  block
+                                  w-full
+                                  mt-1
+                                  border-gray-300
+                                  rounded-md
+                                  shadow-sm
+                                  focus:border-indigo-300
+                                  focus:ring
+                                  focus:ring-indigo-200
+                                  focus:ring-opacity-50
+                                  px-1
+                                " placeholder="Atlanta, Georgia, USA" required />
+                </label>
+                <label class="block mb-6">
+                  <span class="text-gray-700">Message</span>
+                  <textarea name="message" class="
+                                  block
+                                  w-full
+                                  mt-1
+                                  border-gray-300
+                                  rounded-md
+                                  shadow-sm
+                                  focus:border-indigo-300
+                                  focus:ring
+                                  focus:ring-indigo-200
+                                  focus:ring-opacity-50
+                                  px-1
+                                " rows="3" placeholder="Tell us what you're thinking about..."></textarea>
+                </label>
+                <div>
+                  <button type="submit" class="
+                                  h-10
+                                  px-5
+                                  text-white
+                                  bg-yellow-500
+                                  rounded-lg
+                                  transition-colors
+                                  duration-150
+                                  focus:shadow-outline
+                                  hover:bg-yellow-600
+                                ">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map">
+          <div class="img-title mb-6">
+            <h2 class="text-center text-2xl font-semibold">Service Area</h2>
+          </div>
+
+          <div class="img-map">
+            <div class="contact-icon w-[400px] mx-auto">
+              <div class="address flex item-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg><span class="font-medium">Atlanta, Georgia, USA</span>
+              </div>
+              <div class="call flex item-center text-gray-700 mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg><span class="font-medium">770-385-1318</span>
+              </div>
+            </div>
+            <img src="./assets/images/atlanta.png" alt="" class="w-[400px] mx-auto">
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <section class="bg-yellow-500">
+      <footer class="p-4 shadow md:px-6 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a href="/" class="flex items-center justify-center sm:justify-start mb-4 sm:mb-0">
+            <img src="./assets/images/logo.png" class="mr-3 h-20" alt="Flowbite Logo">
+          </a>
+          <div class="footer-contact text-lg text-white">
+            <p class="text-center sm:text-left">Atlanta, Georgia, USA</p>
+            <p class="text-center sm:text-left">770-385-1318</p>
+          </div>
+        </div>
+        <hr class="my-6 border-white sm:mx-auto lg:my-8">
+        <span class="block text-sm text-white text-center">© 2022 <a href="/" class="hover:underline">ElectroSmith</a>.
+          All Rights Reserved.
+        </span>
+      </footer>
+    </section>
+  </div>
+  <!-- Scripts -->
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

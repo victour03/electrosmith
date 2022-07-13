@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.font-primary {
+  font-family: "Inter", sans-serif;
+}
+
+.hero {
+  background: url("../../assets/images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+.about {
+  background: url("../../assets/images/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.call-2 {
+  background: url("../../assets/images/ca.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.contact {
+  background: url("../../assets/images/contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
