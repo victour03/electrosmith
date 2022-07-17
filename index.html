@@ -50,21 +50,21 @@
         </div>
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="mobile-menu">
           <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium">
-            <li>
+            <li class="border-b-4 border-transparent">
               <a href="#home"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Home</a>
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-4 border-transparent hover:bg-gray-50 md:hover:bg-transparent md:hover:border-yellow-500 hover:text-yellow-500 md:p-0">Home</a>
             </li>
             <li>
               <a href="#about"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">About</a>
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-4 border-transparent hover:bg-gray-50 md:hover:bg-transparent md:hover:border-yellow-500 hover:text-yellow-500 md:p-0">About</a>
             </li>
             <li>
               <a href="#services"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Services</a>
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-4 border-transparent hover:bg-gray-50 md:hover:bg-transparent md:hover:border-yellow-500 hover:text-yellow-500 md:p-0">Services</a>
             </li>
             <li>
               <a href="#contact"
-                class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-yellow-500 md:p-0">Contact</a>
+                class="block py-2 pl-3 pr-4 text-gray-700 border-b-4 border-transparent hover:bg-gray-50 md:hover:bg-transparent md:hover:border-yellow-500 hover:text-yellow-500 md:p-0">Contact</a>
             </li>
           </ul>
         </div>
@@ -103,40 +103,55 @@
 
   <!-- About Us Section -->
   <div class="about" id="about">
-    <section class="py-20 container max-w-screen-xl mx-auto px-4">
-      <div class="about-title mb-8">
-        <h2 class="text-center text-4xl text-gray-700 font-bold">
-          About Us
-        </h2>
-      </div>
-      <div class="about-description max-w-4xl mx-auto mb-10">
-        <h3 class="text-center text-lg text-gray-700 font-normal">Our electricians are fully licensed and insured, so
-          you can rest assured that your electrical needs will be handled with care and professionalism.
-          Whether it's a big project or a small one, our rates are always fair and affordable, and we guarantee that our
-          workmanship is second to none.
-        </h3>
-      </div>
-      <div class="about-title mb-8">
-        <h2 class="text-center text-4xl text-gray-700 font-bold">
-          <div class="about-title mb-8">
-            <h2 class="text-center text-4xl text-gray-700 font-bold">
-              Why Hire Us?
-            </h2>
+    <section class="py-24 container max-w-screen-lg mx-auto px-4">
+      <div class="container mx-auto about-us grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
+        <div class="about-us-img"><img src="./assets/images/about-img.jpg" alt="about-us" /></div>
+        <div class="flex items-center">
+          <div>
+            <div class="about-title mb-8">
+              <h2 class="text-center text-4xl text-gray-700 font-bold">
+                About Us
+              </h2>
+            </div>
+            <div class="about-description mb-10">
+              <h3 class="text-center text-md lg:text-lg text-gray-700 font-normal">Our electricians are fully licensed
+                and insured,
+                so
+                you can rest assured that your electrical needs will be handled with care and professionalism.
+                Whether it's a big project or a small one, our rates are always fair and affordable, and we guarantee
+                that
+                our
+                workmanship is second to none.
+              </h3>
+            </div>
           </div>
-          <div class="about-description max-w-4xl mx-auto mb-16">
-            <h3 class="text-center text-lg text-gray-700 font-normal">Our goal at ElectroSmith is to set ourselves apart
-              from our competition by delivering customized and professional quality electrical services. It doesn't
-              matter if you are looking for a residential or a commercial solution, we can provide you with the right
-              one.
-              We pride ourselves in our ability to get the job done right, quickly and efficiently, and our team of
-              skilled electricians is always available to help you with any questions you may have about your electrical
-              needs.
-              If you would like to get started on your next project or just need some advice, don't hesitate to contact
-              us.
-
-            </h3>
+        </div>
+      </div>
+      <div class="container mx-auto why-choose grid grid-cols-1 md:grid-cols-2 gap-5 mb-24">
+        <div class="flex items-center order-2 md:order-1">
+          <div>
+            <div class="why-choose-title mb-8">
+              <h2 class="text-center text-4xl text-gray-700 font-bold">
+                Why Hire Us?
+              </h2>
+            </div>
+            <div class="why-choose-description">
+              <h3 class="text-center text-md lg:text-lg text-gray-700 font-normal">Our goal at ElectroSmith is to set
+                ourselves
+                apart
+                from our competition by delivering customized and professional quality electrical services. It doesn't
+                matter if you are looking for a residential or a commercial solution, we can provide you with the right
+                one.
+                We pride ourselves in our ability to get the job done right, quickly and efficiently, and our team of
+                skilled electricians is always available to help you with any questions you may have about your
+                electrical
+                needs.
+              </h3>
+            </div>
           </div>
-        </h2>
+        </div>
+        <div class="why-choose-img order-1 md:order-2"><img src="./assets/images/why-choose.jpg" alt="why-choose-us" />
+        </div>
       </div>
       <div class="about-card grid grid-cols-1 gap-5 lg:grid-cols-2">
         <div
@@ -376,6 +391,59 @@
             </div>
           </div>
         </div>
+        <div class="services-residential mx-auto mb-5">
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm">
+            <a href="#">
+              <img class="object-cover object-top w-full h-72 rounded-t-lg" src="./assets/images/electrical-remodel.jpg"
+                alt="" />
+            </a>
+            <div class="p-5">
+              <h5 class="mb-4 text-2xl text-center font-bold tracking-tight text-gray-700">
+                New Constructions, Remodels, and Additions
+              </h5>
+              <div class="font-normal text-sm md:text-base text-gray-700">
+                <p class="mb-3">
+                  Whether you're building a new home, remodeling one, or adding more square footage to an existing one,
+                  you want to make sure that the electrical work is done correctly. That's why you need a licensed and
+                  experienced electrician to ensure the job is done right the first
+                  time, saving you time, money, and headaches in the process.
+
+                </p>
+                <div class="flex item-center justify-center">
+                  <a href="#contact"><button type="button"
+                      class="text-gray-700 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
+                      More</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-residential mx-auto mb-5">
+          <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-sm">
+            <a href="#">
+              <img class="object-cover object-top w-full h-72 rounded-t-lg" src="./assets/images/residential.jpg"
+                alt="" />
+            </a>
+            <div class="p-5">
+              <h5 class="mb-4 text-2xl text-center font-bold tracking-tight text-gray-700">
+                Residential and Commercial Electrical Services
+              </h5>
+              <div class="font-normal text-sm md:text-base text-gray-700">
+                <p class="mb-3">
+                  At ElectroSmith, we have the experience and expertise to handle a wide variety of electrical projects
+                  in both commercial and residential settings. We can design and install a complete wiring system,
+                  including a brand new electrical panel and breaker box. Or, if you already have an existing panel and
+                  breaker box, we can retrofit your home with a new, energy-efficient lighting and safety system.
+                </p>
+                <div class="flex item-center justify-center">
+                  <a href="#contact"><button type="button"
+                      class="text-gray-700 hover:text-white border border-yellow-500 hover:bg-yellow-500 focus:ring-4 focus:outline-none focus:ring-yellow-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
+                      More</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -495,17 +563,33 @@
 
   <!-- Contact Section -->
   <div class="contact" id="contact">
-    <section class="container max-w-screen-lg mx-auto py-16 px-4 text-gray-700">
-      <div class="contact-title mb-10">
-        <h2 class="text-center text-4xl font-bold">Contact Us</h2>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 rounded-3xl">
-        <div class="contact-form flex item-center justify-center mb-10 md:mb-0">
-          <div class="w-full md:w-96 md:max-w-full">
-            <div class="contact-form-title mb-6">
-              <h2 class="text-center text-2xl font-semibold">Request a Service</h2>
+    <section class="container max-w-screen-xl mx-auto py-20 px-4 text-gray-700">
+      <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 rounded-3xl">
+        <div class="contact-map order-2 lg:order-1">
+          <div class="img-map">
+            <div class="contact-icon w-full max-w-lg lg:max-w-none mx-auto">
+              <div class="address flex item-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg><span class="font-medium text-xl">Atlanta, Georgia, USA</span>
+              </div>
+              <div class="call flex item-center text-gray-700 mb-5">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                </svg><span class="font-medium text-xl">770-385-1318</span>
+              </div>
             </div>
-            <div class="p-6 border border-gray-300 max-w-md mx-auto sm:rounded-md bg-white">
+            <img src="./assets/images/atlanta.png" alt="" class="w-full max-w-lg lg:max-w-none mx-auto mx-auto">
+          </div>
+        </div>
+        <div class="contact-form flex item-center justify-center mb-10 md:mb-0 order-1 lg:order-2">
+          <div class="w-full">
+            <div class="p-6 border border-gray-300 max-w-xl mx-auto sm:rounded-md bg-white">
+              <div class="contact-form-title mb-8">
+                <h2 class="text-center text-3xl font-semibold">We Want to Hear From You!</h2>
+              </div>
               <form method="POST" action="">
                 <label class="block mb-6">
                   <span class="text-gray-700">Your name</span>
@@ -606,29 +690,6 @@
             </div>
           </div>
         </div>
-        <div class="contact-map">
-          <div class="img-title mb-6">
-            <h2 class="text-center text-2xl font-semibold">Service Area</h2>
-          </div>
-
-          <div class="img-map">
-            <div class="contact-icon w-[400px] mx-auto">
-              <div class="address flex item-center mb-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                </svg><span class="font-medium">Atlanta, Georgia, USA</span>
-              </div>
-              <div class="call flex item-center text-gray-700 mb-5">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
-                  <path
-                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                </svg><span class="font-medium">770-385-1318</span>
-              </div>
-            </div>
-            <img src="./assets/images/atlanta.png" alt="" class="w-[400px] mx-auto">
-          </div>
-        </div>
 
       </div>
     </section>
@@ -638,16 +699,6 @@
   <div class="footer">
     <section class="bg-yellow-500">
       <footer class="p-4 shadow md:px-6 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <a href="/" class="flex items-center justify-center sm:justify-start mb-4 sm:mb-0">
-            <img src="./assets/images/logo.png" class="mr-3 h-20" alt="Flowbite Logo">
-          </a>
-          <div class="footer-contact text-lg text-white">
-            <p class="text-center sm:text-left">Atlanta, Georgia, USA</p>
-            <p class="text-center sm:text-left">770-385-1318</p>
-          </div>
-        </div>
-        <hr class="my-6 border-white sm:mx-auto lg:my-8">
         <span class="block text-sm text-white text-center">© 2022 <a href="/" class="hover:underline">ElectroSmith</a>.
           All Rights Reserved.
         </span>
